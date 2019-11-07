@@ -1,3 +1,10 @@
-from django.shortcuts import render
+from rest_framework.viewsets import ModelViewSet
 
-# Create your views here.
+
+from core.models import Agenda
+from .serializers import AgendaSerializer
+
+
+class AgendaViewSet(ModelViewSet):
+    queryset = Agenda.objects.all()
+    serializer_class = AgendaSerializer
