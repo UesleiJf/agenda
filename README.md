@@ -120,3 +120,5 @@ To show heroku configs do
 ### Creating the Django admin user
 
     heroku run python3 manage.py createsuperuser
+    
+### Creating by UesleiJF
